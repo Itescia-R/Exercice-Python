@@ -1,0 +1,13 @@
+def palindrome(chaine):
+    i, longueur = 0, len(chaine)
+ 
+    while i < longueur:
+        if chaine[i] != chaine[-i - 1]:
+              return False
+        i += 1
+ return True
+ 
+if palindrome(raw_input()):
+    print "C'est un palindrome."
+else:
+    print "Ce n'est pas un palindrome."
