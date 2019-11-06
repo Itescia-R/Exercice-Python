@@ -1,0 +1,27 @@
+Exercice 16 (Distance de Hamming) :
+
+def distance_hamming(mot1,mot2):
+
+    d=0
+	 m1=mot1.upper()
+		m2=mot2.upper()
+    print(m1)
+
+    if len(m1)==len(m2):
+
+        for i in range(0,len(m1),1):
+
+            if m1[i]!=m2[i]:
+
+                d=d+1
+
+        return d
+
+    else:
+
+        print("les mots saisies n'ont pas même longueur")
+
+
+result=distance_hamming('lapin','satin')
+
+print(result)
